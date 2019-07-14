@@ -1,0 +1,241 @@
+body {
+    color: black;
+    top: 0px;
+    margin: -29px;
+    overflow-x: hidden;
+}
+
+.vertical-container {
+    height: 300px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  
+  }
+  h1.vertical-container {
+    font-size: 122%;
+    height: 60px;
+    color: white;
+    font-weight: 100;
+  }
+
+  .calculator-inputs
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .calculator-inputs form
+  {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  } 
+
+  .calculator-inputs input
+  {
+    border: none;
+    padding: 0px 0px 0px 0px;
+    display: block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    margin-top: 32px;
+  }
+
+  .calculator-inputs input:focus {
+    outline: none;
+  }
+  .calculator-inputs input::-webkit-input-placeholder {
+    color: rgba(92, 118, 152, 0.7);
+  }
+  .calculator-header
+  {
+    height: 50px;
+    background-image: linear-gradient(#a64dff,#7300e6);
+  }
+  
+  .button1
+  {
+    background-image: linear-gradient(#a64dff,#7300e6);
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    cursor: pointer;
+    width: 70px;
+    height: 60px;
+    line-height: 23px;
+    padding: 0px;
+    outline:none;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+
+  .button1:hover
+  {
+    opacity: 0.8;
+    transition: all 0.4s
+  }
+
+  .plus-sign
+  {
+    transform: scale(2.5, 2.5);
+    margin-top: 7px;
+  }
+
+  .button2
+  {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    /* margin: 35px 2px; */
+    cursor: pointer;
+    width: 70px;
+    height: 60px;
+    background-image: linear-gradient(#a64dff,#7300e6);
+    line-height: 23px;
+    padding: 0px;
+    margin-top: 34px;
+    margin-left: 33px;
+    outline:none;
+    transition-duration: 0.4s;
+    opacity: 1;
+  }
+
+  .button2:hover
+  {
+    opacity: 0.8;
+    transition: all 0.4s
+  }
+
+  .calculator-buttons
+  {
+    margin: auto;
+  }
+
+  .calculator-result
+  {
+    color: rgba(92, 118, 152, 0.7);
+    margin-top: 33px;
+    visibility: hidden;
+  }
+  
+  #result
+  {
+    display: inline-flex;
+  }
+
+  .inner-calculator-inputs
+  {
+    position: relative;
+  }
+
+  .inner-calculator-inputs label
+  {
+    position: absolute;
+    top:27px;
+  }
+
+  .inner-calculator-inputs input:focus + label,.inner-calculator-inputs input:not(:placeholder-shown) + label
+  {
+    opacity:1;
+    transform: scale(0.9) translateY(-80%) translateX(-7px);
+    color: rgba(92, 118, 152, 0.7);
+  }
+
+  .inner-calculator-inputs input:focus
+  {
+    border:none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    outline-color: #000;
+    box-shadow: none !important;
+    background-color: none;
+  }
+
+  .inner-calculator-inputs
+  {
+    padding: 15px;
+  }
+
+  .inner-calculator-inputs input
+  {
+    width:100%;
+  }
+
+  .inner-calculator-inputs label,.inner-calculator-inputs input{
+    transition: all 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+ }
+.outer-calculator-buttons-wrp
+{
+  margin: auto;
+}
+
+.add-to-home-screen
+{
+    margin: auto;
+    margin-top: 20px;
+}
+.add-to-home-screen-button
+{
+    color: white;
+    background-image: linear-gradient(#a64dff,#7300e6);
+    font-size: 11px;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.add-to-home-screen-button:hover
+{
+  opacity: 0.8;
+  transition: all 0.4s
+}
+.clear-inputs
+{
+  margin: auto;
+  margin-top: 20px;
+}
+
+.clear-input-result-button
+{
+    color: white;
+    background-image: linear-gradient(#a64dff,#7300e6);
+    font-size: 11px;
+    width: 180px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.clear-input-result-button:hover
+{
+  opacity: 0.8;
+  transition: all 0.4s
+}
+.store-result
+{
+  margin-left: 16px;
+}
+

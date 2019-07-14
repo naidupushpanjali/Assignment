@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='all' href='Stylesheet.css'>
+  <script src='App.js'></script>
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <!--Adding header section for the Web APP-->
+  <div class="calculator-header">
+    <h1 class="vertical-container"> Calculator </h1>
+  </div>
+  <!-- Getting the inputs from the user using the input text field -->
+  <div class="calculator-inputs">
+    <form method="POST">
+      <div class="inner-calculator-inputs">
+        <input id="input1" class="input1" type="text" placeholder=" " />
+        <label for="Enter value 1">Enter value 1</label>
+      </div>
+      <div class="inner-calculator-inputs">
+        <input id="input2" class="input2" type="text" placeholder=" " />
+        <label for="Enter value 2">Enter value 2</label>
+      </div>
+      <!-- Creating buttons for performing the perticular actions like Add, Subtract, Multiply, Divide-->
+      <div class="outer-calculator-buttons-wrp">
+        <div class="calculator-buttons">
+          <button class="button1" type="button" onclick="Add();"> <!--Add-->
+            <div class="plus-sign">&#43;</div>Add
+          </button>
+          <button class="button2" type="button" onclick="Subtract()"> <!--Subtract-->
+            <div class="plus-sign">&#8722;</div>Subtract
+          </button>
+        </div>
+        <div class="calculator-buttons">
+          <button class="button1" type="button" onclick="Multiply()"> <!--Multiply-->
+            <div class="plus-sign">&#215;</div>Multiply
+          </button>
+          <button class="button2" type="button" onclick="Divide()"> <!--Divide-->
+            <div class="plus-sign">&#247;</div>Divide
+          </button>
+        </div>
+      </div>
+      <!--Setting the result of the operations into a label field and to display it to the user-->
+      <div id="store-result" class="calculator-result">
+        <label>Result : </label>
+        <label id="result"></label>
+      </div>
+      <!--Button for Adding the App to the homescreen-->
+      <div class="add-to-home-screen">
+        <button type="button" id="homescreen" class="add-to-home-screen-button">Add to homescreen</button>
+      </div>
+      <div class="clear-inputs">
+          <button type="button" id="clear" class="clear-input-result-button" onclick="clearControls();">Clear</button>
+      </div>
+    </form>
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBan3yF0HX94wWFrI4iXnSc__WmcziBLFM",
+      authDomain: "calculator-a7007.firebaseapp.com",
+      databaseURL: "https://calculator-a7007.firebaseio.com",
+      projectId: "calculator-a7007",
+      storageBucket: "",
+      messagingSenderId: "744424796415",
+      appId: "1:744424796415:web:b3ea0741843e54b3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <!--Service Worker-->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function () {
+          console.log('Service Worker Registered');
+        });
+    }
+  </script>
+</body>
+
+</html>
