@@ -32,3 +32,9 @@ $ firebase deploy
 ![Calculator](https://github.com/naidupushpanjali/Assignment/blob/master/Calculator.png)
 
 Clear your cache before running the program or press ```Ctrl+Shift+R``` for hard cache refresh.
+
+# Run Lighthouse
+
+[Get Lighthouse extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) and run lighthouse tool on hosted site:
+
+![Alt Text]()
