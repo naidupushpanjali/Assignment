@@ -1,15 +1,16 @@
-# Assignment
-Calculator
+# Calculator
+Create a folder called Calculator and add these files into that folder 
 
 # Host with Firebase
 ## Create Firebase project
-[Create Firebase project in Firebase console](https://firebase.google.com/docs/web/setup) and add the project Assignment to it
+[Create Firebase project in Firebase console](https://firebase.google.com/docs/web/setup)
 
 # Initialize Firebase project
 Make sure [node.js](https://nodejs.org/en/) is installed and then run:
 
 ```bash
 $ npm install -g firebase-tools
+$ firbase  login
 $ firebase init    # Generate a firebase.json 
 ```
 Select Hosting as an option when you run 
@@ -26,6 +27,6 @@ $ firebase deploy
 
 ## Go to URL and check it looks like this:
 
-![alt text](http://url/to/img.png)
+![Calculator](https://github.com/naidupushpanjali/Assignment/blob/master/Calculator.png)
 
 
