@@ -1,5 +1,7 @@
-# Calculator
-Create a folder called Calculator and add these files into that folder 
+# [Calculator](https://calculator-a7007.firebaseapp.com)
+ 
+# To Run this project on your Computer
+Follow the below steps
 
 # Host with Firebase
 [Create Firebase project in Firebase console](https://firebase.google.com/docs/web/setup)
@@ -35,6 +37,4 @@ Clear your cache before running the program or press ```Ctrl+Shift+R``` for hard
 
 # Run Lighthouse
 
-[Get Lighthouse extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) and run lighthouse tool on hosted site:
-
-![Alt Text]()
+[Get Lighthouse extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) and run lighthouse tool on hosted site
