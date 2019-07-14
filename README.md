@@ -2,7 +2,6 @@
 Create a folder called Calculator and add these files into that folder 
 
 # Host with Firebase
-## Create Firebase project
 [Create Firebase project in Firebase console](https://firebase.google.com/docs/web/setup)
 
 # Initialize Firebase project
