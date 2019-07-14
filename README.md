@@ -1,4 +1,5 @@
-# [Calculator](https://calculator-a7007.firebaseapp.com)
+# [Calculator](https://calculator-a7007.firebaseapp.com) 
+ This is a website that helps you with a simple arithmetic calculation like ```+,-,*,/```
  
 # To Run this project on your Computer
 Follow the below steps
