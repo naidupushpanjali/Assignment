@@ -18,6 +18,9 @@ Select Hosting as an option when you run
 Guided by Firebase, select your project, change public directory to ``` public ```,
 configure as single-page app, and DO NOT overwrite ``` index.html```.
 
+## Note!
+When your public directory is created add the files from ```Calculator``` folder to ```public``` directory folder
+
 # Deploy Firebase project
 
 ```bash
@@ -28,4 +31,4 @@ $ firebase deploy
 
 ![Calculator](https://github.com/naidupushpanjali/Assignment/blob/master/Calculator.png)
 
-
+Clear your cache before running the program or press ```Ctrl+Shift+R``` for hard cache refresh.
